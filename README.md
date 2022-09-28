@@ -1,6 +1,6 @@
 # AWSDataLakehouseMusic
 
-Constrói um data lakehouse na AWS. O provisionamento e o job inicial no Glue se dão por arquivos terraform de forma automatizada. Ao rodar o Glue script, os dados semi-estruturados são copiados da pasta landing zone para a pasta bronze. Já nesta transformação são gerados arquivos parquet no formato delta. O crawler das pastas é feito manualmente, podendo também ser feito via Terraform. A finalização deste processo cria uma database que é utilizada como elemento centralizador no catálogo e no data lakehouse. Por fim, o Athena é utilizado para realizar query serverless, com os dados já estruturados. Não foi objeto do projeto realizar transformações, agregações e insights.
+Constrói um data lakehouse na AWS. O provisionamento e o job inicial no Glue se dão por arquivos Terraform de forma automatizada. Ao rodar o Glue script, os dados semi-estruturados são copiados da pasta landing zone para a pasta bronze. Já nesta transformação são gerados arquivos parquet no formato delta. O crawler das pastas é feito manualmente, podendo também ser feito via Terraform. A finalização deste processo cria uma database que é utilizada como elemento centralizador no catálogo e no data lakehouse. Por fim, o Athena é utilizado para realizar query serverless, com os dados já estruturados. Não foi objeto do projeto realizar transformações, agregações e insights.
 
 ## Arquitetura
 <p align="center">
